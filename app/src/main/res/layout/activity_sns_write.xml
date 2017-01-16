@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/wirte_sns_title">
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:background="#00eeeeee"
+            android:onClick="onRightButton"
+            android:src="@drawable/write_sns_upload" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <EditText
+        android:id="@+id/contentFiled"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="글을 입력해 주세요."
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#555555"
+        android:textColorHint="#cccccc"
+        android:textSize="13dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7.5dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ttoview.nakayosi.ttoview.view.WriteThumbView
+                android:id="@+id/addImage01"
+                android:layout_width="95dp"
+                android:layout_height="93dp" />
+
+            <com.ttoview.nakayosi.ttoview.view.WriteThumbView
+                android:id="@+id/addImage02"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:visibility="gone" />
+
+            <com.ttoview.nakayosi.ttoview.view.WriteThumbView
+                android:id="@+id/addImage03"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:visibility="gone" />
+
+            <com.ttoview.nakayosi.ttoview.view.WriteThumbView
+                android:id="@+id/addImage04"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:visibility="gone" />
+
+            <com.ttoview.nakayosi.ttoview.view.WriteThumbView
+                android:id="@+id/addImage05"
+                android:layout_width="95dp"
+                android:layout_height="93dp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/addImageDimLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/addImageButton"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:src="@drawable/btn_add" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/default_pressed_issue_bg"
+                    android:clickable="true"
+                    android:onClick="onImageAddButton"
+                    android:orientation="vertical"></LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cameraButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:background="@null"
+                android:onClick="onCameraButton"
+                android:src="@drawable/write_sns_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageButton
+                android:id="@+id/blogButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBlogButton"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.kakao.usermgmt.LoginButton
+                    android:id="@+id/com_kakao_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/kakaoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="onKakaoButton"
+                    android:src="@drawable/selector_kakaostory"
+                    android:layout_marginRight="10dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebookButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="onFacebookButton"
+                    android:src="@drawable/ic_launcher" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

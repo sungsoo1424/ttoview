@@ -1,0 +1,41 @@
+-keep class com.ttoview.nakayosi.ttoview.SimpleNFCApp {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.ttoview.nakayosi.ttoview.activity.SplashActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.ReadActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.WriteActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.WriteActivity2 { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.MainActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.HelpActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.BlogViewActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.util.picker.activity.PhotoPickerActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.SNSWriteActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.SNSWriteActivity2 { <init>(); }
+-keep class com.facebook.FacebookActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.NfcTest { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.WebViewActivity { <init>(); }
+-keep class com.ttoview.nakayosi.ttoview.activity.AskActivity { <init>(); }
+-keep class com.google.android.gms.ads.AdActivity { <init>(); }
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
+-keep class com.google.android.gms.appinvite.PreviewActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver { <init>(); }
+-keep class com.google.android.gms.cast.framework.media.MediaNotificationService { <init>(); }
+-keep class com.google.android.gms.cast.framework.ReconnectionService { <init>(); }
+-keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService { <init>(); }
+-keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.android.gms.tagmanager.TagManagerService { <init>(); }
+-keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.kakao.auth.authorization.authcode.KakaoWebViewActivity { <init>(); }
+-keep class com.facebook.CustomTabActivity { <init>(); }
+-keep class com.facebook.CustomTabMainActivity { <init>(); }

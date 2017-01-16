@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ttoview.nakayosi.ttoview.activity.WriteActivity2"
+    tools:ignore="MergeRootFrame"
+    android:background="#f9f8f8"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    >
+
+    <LinearLayout
+        android:id="@+id/writeLyaoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/write_title">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/goHome"
+                    android:src="@drawable/button_home_color"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/explainLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:id="@+id/progressImage"
+                    android:src="@drawable/step1"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_height="140dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:id="@+id/progressExplain"
+                    android:src="@drawable/explain_step1"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox"
+                    android:text="기록삭제를 방지합니다. (단 재기록은 불가능합니다.)"
+                    android:checked="false"
+                    android:textColor="#C0B2A4" />
+
+                <LinearLayout
+                    android:id="@+id/urlLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/url_back_off"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="0dp">
+
+                    <EditText
+                        android:id="@+id/urlWrite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#00ffffff"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:maxLines="1"
+                        android:hint=" URL 입력(길게눌러 붙여넣기)"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:id="@+id/url_ok_button"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/url_button"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardImageLayOut"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="220dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo02"
+                android:id="@+id/card_img"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/urlView"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

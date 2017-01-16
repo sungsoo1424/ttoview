@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ttoview.nakayosi.ttoview"
+    android:versionCode="1"
+    android:versionName="1.0.02"
+    >
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.ttoview.nakayosi.ttoview.SimpleNFCApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon75"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        >
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            >
+            <!--  android:theme="@android:style/Theme.Light.NoTitleBar"> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="developer.android.com"
+                    android:pathPrefix="/index.html"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.ReadActivity"
+            android:label="@string/title_activity_read"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.WriteActivity"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.WriteActivity2"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.MainActivity"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.HelpActivity"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.BlogViewActivity"
+            android:label="@string/title_activity_write" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.util.picker.activity.PhotoPickerActivity"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Moi.Issue"
+            >
+        </activity>
+
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.SNSWriteActivity"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.SNSWriteActivity2"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Moi.Issue"
+            >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2e5cc48d7b13df79e31f76b86a71cd80484a5929" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.NfcTest"
+            android:label="@string/title_activity_write"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.WebViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="게시글 보기"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.ttoview.nakayosi.ttoview.activity.AskActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="문의"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+</manifest>

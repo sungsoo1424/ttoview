@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TToView</string>
+    <string name="hello_world"></string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_read">NFC 태그 읽기</string>
+    <string name="title_activity_write">NFC 태그 쓰기</string>
+
+    <string name="copyright">copyright (c) 2013 UBIGATE All rights reserved</string>
+
+
+
+    <string name="facebook_app_id">1636718606620123</string>
+
+
+    <string name="kakao_app_key">56316253f78402894314837cebb618bf</string>
+    <string name="kakao_scheme">kakao56316253f78402894314837cebb618bf</string>
+    <string name="kakaostory_host">kakaostory</string>
+
+</resources>

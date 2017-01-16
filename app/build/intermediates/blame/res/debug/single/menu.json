@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\workspace\\android\\ttoview\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "C:\\workspace\\android\\ttoview\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\workspace\\android\\ttoview\\app\\build\\intermediates\\res\\merged\\debug\\menu\\photo_picker_menu.xml",
+        "source": "C:\\workspace\\android\\ttoview\\app\\src\\main\\res\\menu\\photo_picker_menu.xml"
+    }
+]

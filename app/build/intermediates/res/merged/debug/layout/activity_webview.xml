@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ttoview.nakayosi.ttoview.activity.WriteActivity2"
+    tools:ignore="MergeRootFrame"
+    android:background="#f9f8f8"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    >
+
+    <LinearLayout
+        android:id="@+id/writeLyaoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/write_title">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/goHome"
+                    android:src="@drawable/button_home_color"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/url_text"
+                    android:layout_weight="1"
+                    android:textColor="?android:attr/colorForegroundInverse"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/url_go"
+                    android:src="@drawable/url_go"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/webview"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/url_back"
+                android:src="@drawable/webview_back"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/do_write"
+                android:layout_weight="1"
+                android:src="@drawable/do_write" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="http://www.naver.com/"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+</LinearLayout>

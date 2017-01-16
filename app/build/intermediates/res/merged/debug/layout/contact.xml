@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ttoview.nakayosi.ttoview.activity.WriteActivity2"
+    tools:ignore="MergeRootFrame"
+    android:background="#f9f8f8"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    >
+
+    <LinearLayout
+        android:id="@+id/writeLyaoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@color/com_facebook_button_login_silver_background_color">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/cardview_light_background">
+
+            <TextView
+                android:text="문의"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp" />
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/goHome"
+                    android:src="@drawable/button_home_color"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/explainLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:id="@+id/progressExplain"
+                    android:src="@drawable/explain_setting"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <TextView
+                android:text="UUID :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                tools:text="UUID :"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:id="@+id/urlLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/url_back_off"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp">
+
+                <EditText
+                    android:id="@+id/uuid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#00ffffff"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:clickable="false"
+                    android:editable="false" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Card_Num :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                tools:text="Card_Num :"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:id="@+id/urlLayout2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/url_back_off"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp">
+
+                <EditText
+                    android:id="@+id/Serial_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#00ffffff"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:clickable="false"
+                    android:hint="*카드를 태그 하세요"
+                    android:editable="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:text="UUID, Card_Num 복사"
+                    android:layout_height="match_parent"
+                    android:id="@+id/coppy_uuid"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical|fill_vertical|center_horizontal"
+                    android:layout_gravity="center_vertical|fill_horizontal"
+                    android:textSize="10sp"
+                    android:minHeight="40dp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="카드 사용에 문제가 있을 시 UUID, Card_Num을 첨부하여 아래의 메일로 문의 바랍니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                tools:text="카드 사용에 문제가 있을 시 UUID, Card_Num을 첨부하여 아래의 메일로 문의 바랍니다."
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="문의메일 :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_weight="0.1"
+                    tools:text="문의메일 :"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text="ttoview@ttoview.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:layout_weight="1"
+                    android:textColor="@color/com_facebook_button_background_color"
+                    tools:text="ttoview@ttoview.com"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

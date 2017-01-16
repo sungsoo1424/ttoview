@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_find"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_overflow"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/action_noitice"
+                android:orderInCategory="10"
+                android:showAsAction="never|withText"
+                android:title="기기" />
+
+            <item
+                android:id="@+id/action_setting"
+                android:orderInCategory="11"
+                android:showAsAction="never|withText"
+                android:title="기기" />
+
+            <item
+                android:id="@+id/action_logout"
+                android:orderInCategory="12"
+                android:showAsAction="never|withText"
+                android:title="기기" />
+        </menu>
+    </item>
+
+
+</menu>

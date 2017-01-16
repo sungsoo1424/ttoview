@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/column_picker_grid_ImageView_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <net.xenix.picker.view.RecyclingImageView
+        android:id="@+id/column_picker_grid_ImageView_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignLeft="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignRight="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignTop="@id/column_picker_grid_ImageView_frame"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:padding="1dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/column_picker_grid_ImageView_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+</merge>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttoview_sub_bg"
+    android:orientation="vertical"
+    tools:context="com.example.simplenfc.activity.WriteActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/txt_step1" />
+
+        <EditText
+            android:id="@+id/writeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:hint="URL을 입력하세요." />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt_step2" />
+
+        <Button
+            android:id="@+id/blogButton"
+            android:layout_width="196dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/myblog_btn_selector" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트1"
+        android:id="@+id/tagTestButton1"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트2"
+        android:id="@+id/tagTestButton2"
+        android:layout_gravity="right" />
+
+</LinearLayout>

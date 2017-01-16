@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/column_picker_grid_ImageView_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <com.ttoview.nakayosi.ttoview.util.picker.view.RecyclingImageView
+        android:id="@+id/column_picker_grid_ImageView_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignLeft="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignRight="@id/column_picker_grid_ImageView_frame"
+        android:layout_alignTop="@id/column_picker_grid_ImageView_frame"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:padding="1dp"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginTop="7.5dp">
+
+        <ImageView
+            android:id="@+id/column_picker_grid_ImageView_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_view_check_box_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/column_picker_grid_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/column_picker_grid_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_image_border"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_view_selector" />
+</RelativeLayout>

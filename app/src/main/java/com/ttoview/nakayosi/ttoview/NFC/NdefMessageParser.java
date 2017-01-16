@@ -1,0 +1,36 @@
+package com.ttoview.nakayosi.ttoview.NFC;
+
+
+import android.nfc.NdefMessage;
+import android.nfc.NdefRecord;
+import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NdefMessageParser {
+
+    // Utility class
+    private NdefMessageParser() {
+
+    }
+
+
+    public static List<ParsedRecord> parse(NdefMessage message) {
+        return getRecords(message.getRecords());
+    }
+
+    public static List<ParsedRecord> getRecords(NdefRecord[] records) {
+        List<ParsedRecord> elements = new ArrayList<ParsedRecord>();
+        for (NdefRecord record : records) {
+            if (UriRecord.isUri(record)) {
+            	Log.d("", "URI parse");
+                elements.add(UriRecord.parse(record));
+            } else if (TextRecord.isText(record)) {
+                elements.add(TextRecord.parse(record));
+            }
+        }
+
+        return elements;
+    }
+}

@@ -1,0 +1,157 @@
+<resources>
+    <style name="Theme.Moi" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarSize">48dp</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverFlow</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionMenuTextAppearance">
+            @style/TextAppearance.Holo.Widget.ActionBar.Menu
+        </item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/navi_back</item>-->
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+
+    <style name="Theme.Moi.Main" parent="Theme.Moi">
+        <!--<item name="android:homeAsUpIndicator">@drawable/dummy</item>-->
+    </style>
+
+    <style name="Theme.Moi.Issue" parent="Theme.Moi">
+        <!--<item name="android:homeAsUpIndicator">@drawable/navi_back_large</item>-->
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#70c989</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- OverFlow Button styles -->
+    <style name="MyOverFlow">
+        <!--<item name="android:src">@drawable/main_set</item>-->
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="TextAppearance.Holo.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Holo">
+           
+        <item name="android:textSize">15dp</item>
+           
+        <item name="android:textStyle">bold</item>
+           
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustUnspecified</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DimDialog" parent="@style/TransparentDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- ActionBar styles Login-->
+    <style name="MyActionBarLogin" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#80000000</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MoiLogin" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarSize">48dp</item>
+        <item name="android:actionBarStyle">@style/MyActionBarLogin</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverFlow</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionMenuTextAppearance">
+            @style/TextAppearance.Holo.Widget.ActionBar.Menu
+        </item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/navi_back</item>-->
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- ActionBar styles Join-->
+    <style name="MyActionBarJoin" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#80000000</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MoiJoin" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarSize">48dp</item>
+        <item name="android:actionBarStyle">@style/MyActionBarLogin</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverFlow</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionMenuTextAppearance">
+            @style/TextAppearance.Holo.Widget.ActionBar.Menu
+        </item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/navi_back</item>-->
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+
+    <!-- ActionBar styles ImageViewer-->
+    <style name="MyActionBarImage" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#373737</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.MoiImage" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarSize">48dp</item>
+        <item name="android:actionBarStyle">@style/MyActionBarLogin</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverFlow</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:actionMenuTextAppearance">
+            @style/TextAppearance.Holo.Widget.ActionBar.Menu
+        </item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/navi_back</item>-->
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+
+    <!--<style name="CropImageTheme" parent="android:Theme.DeviceDefault">-->
+        <!--<item name="cropImageStyle">@style/Widget.CropImageView</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget.CropImageView" parent="android:Widget">-->
+        <!--<item name="showThirds">true</item>-->
+        <!--<item name="showHandles">always</item>-->
+        <!--<item name="highlightColor">@color/highlight</item>-->
+    <!--</style>-->
+
+    <!--<style name="PullToRefreshStyle">-->
+        <!--<item name="ptrHeaderBackground">#ffededed</item>-->
+    <!--</style>-->
+
+</resources>
